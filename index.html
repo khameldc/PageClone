@@ -3,89 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bing</title>
+    <title>YouTube Clone</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <div class="logo-microsoft"><i class="fa-brands fa-microsoft"></i></div>
-
-        <nav class="nav-principale">
-            <a href="#">Images</a>
-            <a href="#">Vidéos</a>
-            <a href="#">Cartes</a>
-            <a href="#">Actualités</a>
-            <a href="#">...</a>
-        </nav>
-
+        <div class="logo">
+            <i class="fa-brands fa-youtube"></i>
+            <span>YouTube</span>
+        </div>
+        <form class="barre-recherche">
+            <input type="text" placeholder="Search">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
         <div class="header-droite">
-            <span class="desktop-only">English</span>
-            <span class="points desktop-only">60</span>
-            <a href="#" class="icone-recompense"><i class="fa-solid fa-shield-halved"></i></a>
-            <a href="#" class="desktop-only">Connexion</a>
-            <i class="fa-solid fa-circle-user avatar"></i>
-            <button class="menu-hamburger"><i class="fa-solid fa-bars"></i></button>
+            <i class="fa-regular fa-bell"></i>
+            <i class="fa-solid fa-circle-user"></i>
         </div>
     </header>
 
-    <main>
-        <form class="barre-recherche">
-            <i class="fa-solid fa-magnifying-glass icone-loupe"></i>
-            <input type="text" name="recherche" placeholder="Rechercher sur le Web">
-            <span class="icones-droite">
-                <i class="fa-solid fa-microphone"></i>
-                <i class="fa-solid fa-camera"></i>
-                <i class="fa-solid fa-keyboard"></i>
-            </span>
-        </form>
+    <nav class="sidebar">
+        <a href="#">Home</a>
+        <a href="#">Shorts</a>
+        <a href="#">Subscriptions</a>
+        <a href="#">History</a>
+    </nav>
 
-        <div class="raccourcis">
-            <a href="#" class="raccourci">
-                <div class="raccourci-icone"><i class="fa-solid fa-mobile-screen"></i></div>
-                <span>OpenCode</span>
-            </a>
-            <a href="#" class="raccourci">
-                <div class="raccourci-icone"><i class="fa-solid fa-robot"></i></div>
-                <span>ChatGPT</span>
-            </a>
-            <a href="#" class="raccourci">
-                <div class="raccourci-icone"><i class="fa-solid fa-graduation-cap"></i></div>
-                <span>OpenClassrooms</span>
-            </a>
-            <a href="#" class="raccourci">
-                <div class="raccourci-icone"><i class="fa-solid fa-server"></i></div>
-                <span>localhost 145</span>
-            </a>
-            <a href="#" class="raccourci">
-                <div class="raccourci-icone"><i class="fa-solid fa-robot"></i></div>
-                <span>OpenAI</span>
-            </a>
-            <a href="#" class="raccourci">
-                <div class="raccourci-icone"><i class="fa-brands fa-youtube"></i></div>
-                <span>YouTube</span>
-            </a>
-            <a href="#" class="raccourci">
-                <div class="raccourci-icone"><i class="fa-solid fa-code"></i></div>
-                <span>frontend</span>
-            </a>
-            <a href="#" class="raccourci">
-                <div class="raccourci-icone"><i class="fa-brands fa-google"></i></div>
-                <span>Connexion</span>
-            </a>
+    <main>
+        <div class="filtres">
+            <span class="chip">All</span>
+            <span class="chip">Gaming</span>
+            <span class="chip">Music</span>
+            <span class="chip">Hearthstone</span>
+        </div>
+
+        <div class="grille-videos">
+            <div class="carte-video">
+                <div class="miniature"></div>
+                <h3>Championnat du Monde - Qualifications</h3>
+                <p>Solary Hearthstone - 8K views</p>
+            </div>
+
+            <div class="carte-video">
+                <div class="miniature"></div>
+                <h3>Heroes of the Storm Raynor Gameplay</h3>
+                <p>MFPallytime - 37K views</p>
+            </div>
+
+            <div class="carte-video">
+                <div class="miniature"></div>
+                <h3>Best of NA vs Best of EU Finals</h3>
+                <p>Shadybunny - 41K views</p>
+            </div>
+
+            <div class="carte-video">
+                <div class="miniature"></div>
+                <h3>DK Combo terrorise l'Arene</h3>
+                <p>Ode et Vinz - 546 views</p>
+            </div>
         </div>
     </main>
-
-    <footer>
-        <div class="footer-gauche">
-            <button><i class="fa-solid fa-location-dot"></i> Info</button>
-        </div>
-        <div class="footer-droite">
-            <button><i class="fa-solid fa-chevron-left"></i></button>
-            <button><i class="fa-solid fa-chevron-right"></i></button>
-        </div>
-    </footer>
 
 </body>
 </html>
