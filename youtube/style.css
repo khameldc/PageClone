@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f0f0f;
+    color: white;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+}
+
+.logo i {
+    color: red;
+    font-size: 26px;
+}
+
+.barre-recherche {
+    display: flex;
+    width: 400px;
+}
+
+.barre-recherche input {
+    flex: 1;
+    padding: 8px;
+    background-color: #121212;
+    border: 1px solid gray;
+    color: white;
+}
+
+.barre-recherche button {
+    padding: 8px 15px;
+    background-color: #222;
+    border: 1px solid gray;
+    color: white;
+}
+
+.header-droite {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding: 20px;
+    float: left;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+}
+
+main {
+    margin-left: 200px;
+    padding: 20px;
+}
+
+.filtres {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.chip {
+    background-color: #272727;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+.grille-videos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.carte-video {
+    width: 300px;
+}
+
+.miniature {
+    width: 100%;
+    height: 170px;
+    background-color: #333;
+    margin-bottom: 8px;
+}
+
+.carte-video h3 {
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.carte-video p {
+    font-size: 13px;
+    color: #aaa;
+}
